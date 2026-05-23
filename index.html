@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Cursor glow — follows mouse on all pages -->
+  <div id="cursorGlow"></div>
 
   <!-- NAV -->
   <nav id="navbar">
@@ -45,8 +47,7 @@
   <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-bg">
-      <div class="hero-scatter"></div>
-      <div class="hero-lines"></div>
+      <div class="hero-aurora-3"></div>
     </div>
 
     <div class="hero-content">
@@ -59,7 +60,7 @@
       </h1>
       <div class="hero-subtitle">
         <span class="hero-subtitle-prefix">~/</span>
-        Fleet Owners &amp; Transport Contractors
+        <span id="typewriter"></span><span class="typewriter-cursor">▋</span>
       </div>
       <p class="hero-desc">
         From <strong>Anand, Gujarat</strong> to every corner of the nation —
@@ -99,20 +100,56 @@
       </div>
     </div>
 
-    <!-- Right: Real truck photo -->
+    <!-- Right: Dispatch card (the animated one) -->
     <div class="hero-visual">
-      <div class="hero-photo-card">
-        <img
-          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80"
-          alt="Yash Roadways fleet truck on highway"
-          class="hero-truck-photo"
-        />
-        <div class="hero-photo-badge">
-          <span class="hv-live-dot"></span>
-          Fleet in Motion
+
+      <!-- Live route card with animated truck -->
+      <div class="hv-card hv-route">
+        <div class="hv-card-header">
+          <span class="hv-live"><span class="hv-live-dot"></span> Live Dispatch</span>
+          <span class="hv-time">Just now</span>
+        </div>
+        <div class="hv-route-body">
+          <div class="hv-city">
+            <span class="hv-city-dot hv-dot-from"></span>
+            <div>
+              <strong>Anand</strong>
+              <small>Gujarat</small>
+            </div>
+          </div>
+          <div class="hv-route-line">
+            <div class="hv-truck-anim">🚛</div>
+            <div class="hv-dashes"></div>
+          </div>
+          <div class="hv-city hv-city-right">
+            <span class="hv-city-dot hv-dot-to"></span>
+            <div>
+              <strong>Delhi</strong>
+              <small>NCR</small>
+            </div>
+          </div>
+        </div>
+        <div class="hv-route-meta">
+          <span>🥛 Amul Fed Dairy</span>
+          <span>24 MT · ❄️ 4°C</span>
+          <span class="hv-ontime">✓ On Time</span>
         </div>
       </div>
 
+      <!-- Client trust strip -->
+      <div class="hv-card hv-clients-strip">
+        <p class="hv-strip-label">Trusted by India's biggest names</p>
+        <div class="hv-logos">
+          <div class="hv-logo-pill">🥛 Amul</div>
+          <div class="hv-logo-pill">🏭 Mother Dairy</div>
+          <div class="hv-logo-pill">🥛 Sumul</div>
+          <div class="hv-logo-pill">🍔 McCain</div>
+          <div class="hv-logo-pill">🥛 Banas Dairy</div>
+          <div class="hv-logo-pill">🌾 Simplot</div>
+        </div>
+      </div>
+
+      <!-- Two mini stat cards -->
       <div class="hv-mini-cards">
         <div class="hv-card hv-mini">
           <span class="hv-mini-icon">❄️</span>
@@ -125,6 +162,7 @@
           <small>All major routes</small>
         </div>
       </div>
+
     </div>
 
     <div class="scroll-indicator">

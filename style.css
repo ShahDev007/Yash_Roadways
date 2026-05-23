@@ -8,30 +8,30 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* ── Cream / warm light backgrounds ── */
-  --bg:        #f0eae2;
-  --bg-2:      #e8dfd5;
-  --bg-3:      #f5f0e8;
-  --surface:   #fffcf8;
-  --surface-2: #f5ede3;
+  /* ── Exact portfolio colors ── */
+  --bg:        #F9F5EF;
+  --bg-2:      #F0EAE2;
+  --bg-3:      #F5F0E8;
+  --surface:   #FFFFFF;
+  --surface-2: #F9F5EF;
 
-  /* ── Dark warm text (like #1c1714 on portfolio) ── */
-  --text:      #1c1714;
+  /* ── Dark warm text ── */
+  --text:      #1C1714;
   --text-2:    #3d2e25;
-  --text-3:    #6b4f3f;
-  --text-4:    #9e7b65;
+  --text-3:    #7A6F68;
+  --text-4:    #8A5A3A;
 
   /* ── Terracotta / Claude accent ── */
-  --accent:       #c95a28;
-  --accent-light: #e8834a;
-  --accent-pale:  #f0a860;
+  --accent:       #C95A28;
+  --accent-light: #E8834A;
+  --accent-pale:  #F0A860;
   --accent-glow:  rgba(201, 90, 40, 0.18);
-  --accent-dim:   rgba(201, 90, 40, 0.10);
-  --accent-mid:   rgba(201, 90, 40, 0.28);
+  --accent-dim:   rgba(201, 90, 40, 0.08);
+  --accent-mid:   rgba(201, 90, 40, 0.25);
 
-  /* ── Borders ── */
-  --border:   rgba(28, 23, 20, 0.10);
-  --border-2: rgba(201, 90, 40, 0.18);
+  /* ── Borders (exact portfolio) ── */
+  --border:   #E5DDD5;
+  --border-2: rgba(201, 90, 40, 0.22);
 
   /* ── Typography ── */
   --font-main: 'Outfit', sans-serif;
@@ -53,17 +53,19 @@ body {
   line-height: 1.6;
 }
 
-/* Grain texture overlay — exactly like Dev Shah portfolio */
-body::before {
+/* Grain texture — exact portfolio opacity 0.022 */
+body::after {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 0;
   pointer-events: none;
-  opacity: 0.45;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  mix-blend-mode: multiply;
+  z-index: 9999;
+  opacity: 0.022;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
 }
+
+::selection { background: rgba(201,90,40,0.18); color: #C95A28; }
 
 body > * { position: relative; z-index: 1; }
 
@@ -77,6 +79,32 @@ a { text-decoration: none; color: inherit; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ─── CURSOR GLOW (exact from portfolio) ─── */
+#cursorGlow {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  z-index: 0;
+  will-change: transform;
+  background: radial-gradient(circle at center, rgba(201,90,40,0.10) 0%, transparent 65%);
+  transition: transform 0.1s cubic-bezier(0.23,1,0.32,1);
+}
+
+/* ─── TYPEWRITER cursor blink ─── */
+.typewriter-cursor {
+  font-size: 1rem;
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0; }
 }
 
 /* ─── SCROLLBAR ─── */
@@ -206,9 +234,12 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   overflow: hidden;
   padding-top: 68px;
+  /* Exact portfolio dot grid */
+  background-color: #F9F5EF;
+  background-image: radial-gradient(rgba(201,90,40,0.18) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
 }
 
-/* Scattered dots / symbols — like the portfolio background */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -216,62 +247,66 @@ a { text-decoration: none; color: inherit; }
   overflow: hidden;
 }
 
-.dot-field {
-  position: absolute;
-  inset: 0;
-}
-
-.dot-field span {
-  position: absolute;
-  color: var(--accent);
-  opacity: 0.18;
-  font-size: inherit;
-  pointer-events: none;
-  animation: dotFloat linear infinite;
-}
-
-/* Scattered dots placed via JS, but we define some static ones */
-.hero-scatter {
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle, rgba(201,90,40,0.22) 1px, transparent 1px),
-    radial-gradient(circle, rgba(201,90,40,0.12) 1px, transparent 1px);
-  background-size: 38px 38px, 19px 19px;
-  background-position: 0 0, 9px 9px;
-  mask-image: radial-gradient(ellipse 90% 90% at 60% 45%, black 0%, transparent 80%);
-  opacity: 0.5;
-}
-
-/* Faint route lines */
-.hero-lines {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  opacity: 0.07;
-}
-
-.hero-lines::before {
+/* Aurora blob 1 */
+.hero-bg::before {
   content: '';
   position: absolute;
-  top: 30%;
-  left: 40%;
-  width: 500px;
-  height: 500px;
-  border: 1px solid var(--accent);
+  top: -100px; right: -60px;
+  width: 600px; height: 600px;
   border-radius: 50%;
-  transform: rotate(-20deg) scale(1.5);
+  background: radial-gradient(circle, rgba(201,90,40,0.32) 0%, transparent 65%);
+  filter: blur(80px);
+  animation: aurora1 22s ease-in-out infinite;
 }
 
-.hero-lines::after {
+/* Aurora blob 2 */
+.hero-bg::after {
   content: '';
   position: absolute;
-  top: 10%;
-  left: 55%;
-  width: 1px;
-  height: 60%;
-  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  bottom: -60px; left: 5%;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(240,140,60,0.22) 0%, transparent 65%);
+  filter: blur(100px);
+  animation: aurora2 28s ease-in-out infinite;
 }
+
+/* Aurora blob 3 (extra div injected by JS, or use sibling) */
+.hero-aurora-3 {
+  position: absolute;
+  top: 25%; left: 35%;
+  width: 380px; height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(160,92,58,0.18) 0%, transparent 65%);
+  filter: blur(70px);
+  animation: aurora3 18s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* symbolFloat for floating transport chars */
+@keyframes symbolFloat {
+  0%   { opacity: 0; transform: translateY(0px); }
+  10%  { opacity: var(--sym-opacity, 0.10); }
+  90%  { opacity: var(--sym-opacity, 0.10); }
+  100% { opacity: 0; transform: translateY(-90px); }
+}
+
+@keyframes aurora1 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%     { transform: translate(-40px,30px) scale(1.08); }
+  66%     { transform: translate(30px,-20px) scale(0.96); }
+}
+@keyframes aurora2 {
+  0%,100% { transform: translate(0,0) scale(1.04); }
+  33%     { transform: translate(50px,-35px) scale(1); }
+  66%     { transform: translate(-30px,40px) scale(1.1); }
+}
+@keyframes aurora3 {
+  0%,100% { transform: translate(0,0) scale(0.98); }
+  50%     { transform: translate(-25px,-30px) scale(1.06); }
+}
+
+.hero-scatter, .hero-lines { display: none; }
 
 /* ─── HERO CONTENT ─── */
 .hero-content {
