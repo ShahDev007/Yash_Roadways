@@ -1,29 +1,40 @@
-<svg width="84" height="56" viewBox="0 0 84 56" xmlns="http://www.w3.org/2000/svg">
-  <!-- Cargo container body -->
-  <rect x="28" y="3" width="52" height="28" rx="3" fill="white"/>
-  <!-- Horizontal panel lines on cargo body -->
-  <line x1="28" y1="14" x2="80" y2="14" stroke="rgba(30,58,123,0.20)" stroke-width="1"/>
-  <line x1="28" y1="23" x2="80" y2="23" stroke="rgba(30,58,123,0.20)" stroke-width="1"/>
-  <!-- Cab -->
-  <path d="M6 18 C6 9 13 3 22 3 L28 3 L28 31 L6 31 Z" fill="white"/>
-  <!-- Windshield (tinted glass) -->
-  <path d="M10 20 C10 13 15 8 22 8 L26 8 L26 27 L10 27 Z" fill="rgba(30,58,123,0.40)"/>
-  <!-- Cab door line -->
-  <line x1="16" y1="18" x2="16" y2="31" stroke="rgba(30,58,123,0.20)" stroke-width="1"/>
+<svg width="96" height="64" viewBox="0 0 96 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cargo box body -->
+  <rect x="33" y="5" width="59" height="31" rx="2.5" fill="white"/>
+  <!-- Cargo panel lines -->
+  <line x1="55" y1="5"  x2="55" y2="36" stroke="rgba(30,58,123,0.18)" stroke-width="0.9"/>
+  <line x1="74" y1="5"  x2="74" y2="36" stroke="rgba(30,58,123,0.18)" stroke-width="0.9"/>
+  <!-- Roof lip on cargo -->
+  <rect x="33" y="3" width="59" height="4" rx="1.5" fill="white" opacity="0.55"/>
+
+  <!-- Cab (cab-over-engine — windshield right at front) -->
+  <rect x="5"  y="9"  width="28" height="27" rx="3" fill="white"/>
+  <!-- Cab roof panel / visor -->
+  <rect x="4"  y="5"  width="30" height="6"  rx="2" fill="white"/>
+  <!-- Windshield (large, goes near top of cab) -->
+  <rect x="8"  y="12" width="22" height="16" rx="2" fill="rgba(30,58,123,0.38)"/>
+  <!-- Side window strip -->
+  <rect x="8"  y="30" width="22" height="5"  rx="1" fill="rgba(30,58,123,0.18)"/>
+  <!-- Front bumper bar -->
+  <rect x="3"  y="35" width="30" height="3.5" rx="1.5" fill="white" opacity="0.75"/>
+
   <!-- Chassis rail -->
-  <rect x="4" y="31" width="76" height="3" rx="1.5" fill="white"/>
+  <rect x="2" y="36" width="90" height="3" rx="1.5" fill="white"/>
+
   <!-- Front wheel -->
-  <circle cx="20" cy="41" r="8" fill="#0a0a1e"/>
-  <circle cx="20" cy="41" r="4" fill="#1a1a35"/>
-  <circle cx="20" cy="41" r="1.5" fill="rgba(255,255,255,0.35)"/>
-  <!-- Rear wheels (tandem axle) -->
-  <circle cx="59" cy="41" r="8" fill="#0a0a1e"/>
-  <circle cx="59" cy="41" r="4" fill="#1a1a35"/>
-  <circle cx="59" cy="41" r="1.5" fill="rgba(255,255,255,0.35)"/>
-  <circle cx="72" cy="41" r="8" fill="#0a0a1e"/>
-  <circle cx="72" cy="41" r="4" fill="#1a1a35"/>
-  <circle cx="72" cy="41" r="1.5" fill="rgba(255,255,255,0.35)"/>
-  <!-- Gold speed lines (like on the business card) -->
-  <line x1="1" y1="51" x2="36" y2="51" stroke="#C8860A" stroke-width="2.4" stroke-linecap="round"/>
-  <line x1="1" y1="56" x2="52" y2="56" stroke="#C8860A" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="20" cy="45" r="9"   fill="#0b0b22"/>
+  <circle cx="20" cy="45" r="4.5" fill="#1c1c3a"/>
+  <circle cx="20" cy="45" r="2"   fill="rgba(255,255,255,0.32)"/>
+  <!-- Rear tandem wheels -->
+  <circle cx="67" cy="45" r="9"   fill="#0b0b22"/>
+  <circle cx="67" cy="45" r="4.5" fill="#1c1c3a"/>
+  <circle cx="67" cy="45" r="2"   fill="rgba(255,255,255,0.32)"/>
+  <circle cx="81" cy="45" r="9"   fill="#0b0b22"/>
+  <circle cx="81" cy="45" r="4.5" fill="#1c1c3a"/>
+  <circle cx="81" cy="45" r="2"   fill="rgba(255,255,255,0.32)"/>
+
+  <!-- Three gold speed lines — the ≡ symbol from the business card -->
+  <line x1="0" y1="54" x2="38" y2="54" stroke="#C8860A" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="0" y1="58" x2="54" y2="58" stroke="#C8860A" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="0" y1="62" x2="30" y2="62" stroke="#C8860A" stroke-width="2.2" stroke-linecap="round"/>
 </svg>
