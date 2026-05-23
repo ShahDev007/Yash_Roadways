@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
 <body>
   <!-- Cursor glow — follows mouse on all pages -->
+  <div id="scrollProgress" class="scroll-progress"></div>
   <div id="cursorGlow"></div>
 
   <!-- NAV -->
@@ -242,35 +243,39 @@
         <h2 class="section-title">Built for <span class="gradient-text">Every Freight Need</span></h2>
         <p class="section-subtitle">Cold chain, bulk haul, or last-mile — we have the fleet and the expertise.</p>
       </div>
-      <div class="hs-grid">
-        <div class="hs-card reveal">
+      <div class="hs-bento">
+        <!-- Large feature card — cold chain -->
+        <div class="hs-card hs-card-feature reveal">
           <div class="hs-photo">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Refrigerated transport" />
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Refrigerated transport" />
           </div>
           <div class="hs-body">
             <span class="hs-icon">❄️</span>
             <h3>Refrigerated Transport</h3>
-            <p>State-of-the-art reefer trucks maintaining precise temperature control from source to destination.</p>
+            <p>Purpose-built reefer fleet maintaining 2°C–8°C precision throughout every haul — Gujarat to Delhi, every time.</p>
           </div>
         </div>
-        <div class="hs-card reveal">
-          <div class="hs-photo">
-            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=600&q=80" alt="Full truckload freight" />
+        <!-- Right column: 2 compact cards -->
+        <div class="hs-bento-col">
+          <div class="hs-card reveal">
+            <div class="hs-photo">
+              <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Full truckload freight" />
+            </div>
+            <div class="hs-body">
+              <span class="hs-icon">🚛</span>
+              <h3>Full Truckload (FTL)</h3>
+              <p>Dedicated full-truck dispatches for bulk freight — up to 35MT per trip.</p>
+            </div>
           </div>
-          <div class="hs-body">
-            <span class="hs-icon">🚛</span>
-            <h3>Full Truckload (FTL)</h3>
-            <p>Dedicated full-truck dispatches for bulk freight with zero compromise on speed or schedule.</p>
-          </div>
-        </div>
-        <div class="hs-card reveal">
-          <div class="hs-photo">
-            <img src="https://images.unsplash.com/photo-1635774152029-17bf0a3e1cb4?auto=format&fit=crop&w=600&q=80" alt="Pan-India routes" />
-          </div>
-          <div class="hs-body">
-            <span class="hs-icon">🗺️</span>
-            <h3>Pan-India Distribution</h3>
-            <p>Direct plant-to-depot hauls ensuring your product moves at maximum efficiency across India.</p>
+          <div class="hs-card reveal">
+            <div class="hs-photo">
+              <img src="https://images.unsplash.com/photo-1709735133497-bbead76953a9?auto=format&fit=crop&w=600&q=80" alt="Pan-India distribution" />
+            </div>
+            <div class="hs-body">
+              <span class="hs-icon">🗺️</span>
+              <h3>Pan-India Distribution</h3>
+              <p>Plant-to-depot hauls across every major freight corridor in India.</p>
+            </div>
           </div>
         </div>
       </div>

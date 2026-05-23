@@ -16,6 +16,16 @@ if (cursorGlow) {
   });
 }
 
+/* ─── Scroll progress bar ─── */
+const scrollProgress = document.getElementById('scrollProgress');
+if (scrollProgress) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    scrollProgress.style.width = (scrollTop / scrollHeight * 100) + '%';
+  }, { passive: true });
+}
+
 /* ─── NAV: scroll glass ─── */
 const navbar = document.getElementById('navbar');
 if (navbar) {
