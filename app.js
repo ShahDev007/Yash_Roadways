@@ -253,9 +253,10 @@ const FLOAT_SYMBOLS = [
 ];
 
 if (heroSection) {
+  const SYM_COLORS = ['#C8860A','#0891B2','#6D28D9','#047857','#0D2148','#BE185D','#E8A820','#06B6D4'];
   const symWrap = document.createElement('div');
   symWrap.style.cssText = 'position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;';
-  FLOAT_SYMBOLS.forEach(sym => {
+  FLOAT_SYMBOLS.forEach((sym, i) => {
     const s = document.createElement('span');
     s.textContent = sym.char;
     s.style.cssText = `
@@ -263,7 +264,7 @@ if (heroSection) {
       left:${sym.x}%;top:${sym.y}%;
       font-size:${sym.size}px;
       font-family:'JetBrains Mono',monospace;
-      color:#C8860A;
+      color:${SYM_COLORS[i % SYM_COLORS.length]};
       opacity:0;
       pointer-events:none;
       animation:symbolFloat ${sym.dur}s ${sym.delay}s linear infinite both;
