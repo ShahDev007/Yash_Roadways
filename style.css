@@ -735,6 +735,93 @@ a { text-decoration: none; color: inherit; }
   font-weight: 600;
 }
 
+/* ── Today's Operations card ── */
+.hv-ops-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.hv-ops-stat {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.hv-ops-cold {
+  border-color: rgba(8,145,178,0.25);
+  background: rgba(8,145,178,0.05);
+}
+
+.hv-ops-num {
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.hv-ops-cold .hv-ops-num { color: var(--teal); }
+
+.hv-ops-num small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.hv-ops-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hv-active-routes {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.hv-ar-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.82rem;
+}
+
+.hv-ar-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hv-ar-route {
+  flex: 1;
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.hv-ar-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+}
+
+.hv-badge-green { background: rgba(16,185,129,0.12); color: #059669; }
+.hv-badge-blue  { background: rgba(59,109,208,0.12); color: #2E55B0; }
+.hv-badge-gold  { background: rgba(200,134,10,0.12);  color: #C8860A; }
+
 /* ── Client trust strip ── */
 .hv-strip-label {
   font-family: var(--font-mono);
