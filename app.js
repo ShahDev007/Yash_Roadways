@@ -157,7 +157,7 @@ if (heroSection) {
   heroSection.appendChild(canvas);
 
   const ctx  = canvas.getContext('2d');
-  const C    = '27,61,140';
+  const C    = '30,58,123';
   const N    = 80, CD = 130, MD = 190;
   let ps = [], mx = -9999, my = -9999, raf = 0;
 
@@ -253,7 +253,7 @@ const FLOAT_SYMBOLS = [
 ];
 
 if (heroSection) {
-  const SYM_COLORS = ['#C8860A','#0891B2','#6D28D9','#047857','#0D2148','#BE185D','#E8A820','#06B6D4'];
+  const SYM_COLORS = ['#C8860A','#0891B2','#6D28D9','#047857','#1E3A7B','#BE185D','#E8A820','#06B6D4'];
   const symWrap = document.createElement('div');
   symWrap.style.cssText = 'position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;';
   FLOAT_SYMBOLS.forEach((sym, i) => {
