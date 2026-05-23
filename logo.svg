@@ -1,37 +1,37 @@
 <svg width="96" height="64" viewBox="0 0 96 64" xmlns="http://www.w3.org/2000/svg">
-  <!-- Cargo / trailer box — white -->
-  <rect x="35" y="7" width="57" height="28" rx="2" fill="white" opacity="0.92"/>
-  <line x1="55" y1="7"  x2="55" y2="35" stroke="rgba(30,58,123,0.15)" stroke-width="0.8"/>
-  <line x1="73" y1="7"  x2="73" y2="35" stroke="rgba(30,58,123,0.15)" stroke-width="0.8"/>
+  <!-- Cargo / trailer box — light with subtle border -->
+  <rect x="35" y="7" width="57" height="28" rx="2" fill="#DDEEFF" stroke="#4AACE8" stroke-width="1"/>
+  <line x1="55" y1="7"  x2="55" y2="35" stroke="#4AACE8" stroke-width="0.7" opacity="0.4"/>
+  <line x1="73" y1="7"  x2="73" y2="35" stroke="#4AACE8" stroke-width="0.7" opacity="0.4"/>
   <!-- Roof lip -->
-  <rect x="35" y="5"  width="57" height="4"  rx="1.5" fill="white" opacity="0.55"/>
+  <rect x="35" y="5"  width="57" height="4"  rx="1.5" fill="#4AACE8" opacity="0.6"/>
 
   <!-- Cab body — blue matching business card -->
   <rect x="5"  y="10" width="30" height="25" rx="3"   fill="#4AACE8"/>
   <!-- Cab roof / visor -->
-  <rect x="4"  y="5"  width="32" height="8"  rx="2"   fill="#4AACE8"/>
-  <!-- Windshield — light tint -->
-  <rect x="8"  y="13" width="22" height="14" rx="2"   fill="rgba(255,255,255,0.42)"/>
+  <rect x="4"  y="5"  width="32" height="8"  rx="2"   fill="#3A9DD8"/>
+  <!-- Windshield -->
+  <rect x="8"  y="13" width="22" height="14" rx="2"   fill="rgba(255,255,255,0.55)"/>
   <!-- Side window strip -->
-  <rect x="8"  y="29" width="22" height="4"  rx="1"   fill="rgba(255,255,255,0.22)"/>
+  <rect x="8"  y="29" width="22" height="4"  rx="1"   fill="rgba(255,255,255,0.28)"/>
   <!-- Front bumper -->
-  <rect x="3"  y="34" width="31" height="3"  rx="1.5" fill="#3A8FC0" opacity="0.9"/>
+  <rect x="3"  y="34" width="31" height="3"  rx="1.5" fill="#2A7DB0"/>
 
   <!-- Chassis rail -->
-  <rect x="2"  y="37" width="90" height="2.5" rx="1.2" fill="rgba(255,255,255,0.65)"/>
+  <rect x="2"  y="37" width="90" height="2.5" rx="1.2" fill="#2A7DB0" opacity="0.7"/>
 
   <!-- Front wheel -->
-  <circle cx="19" cy="46" r="8.5" fill="#0b0b22"/>
-  <circle cx="19" cy="46" r="4.2" fill="#1c1c3a"/>
-  <circle cx="19" cy="46" r="1.7" fill="rgba(255,255,255,0.30)"/>
+  <circle cx="19" cy="46" r="8.5" fill="#1a1a2e"/>
+  <circle cx="19" cy="46" r="4.2" fill="#2d2d4a"/>
+  <circle cx="19" cy="46" r="1.7" fill="rgba(255,255,255,0.35)"/>
 
   <!-- Rear tandem wheels -->
-  <circle cx="66" cy="46" r="8.5" fill="#0b0b22"/>
-  <circle cx="66" cy="46" r="4.2" fill="#1c1c3a"/>
-  <circle cx="66" cy="46" r="1.7" fill="rgba(255,255,255,0.30)"/>
-  <circle cx="81" cy="46" r="8.5" fill="#0b0b22"/>
-  <circle cx="81" cy="46" r="4.2" fill="#1c1c3a"/>
-  <circle cx="81" cy="46" r="1.7" fill="rgba(255,255,255,0.30)"/>
+  <circle cx="66" cy="46" r="8.5" fill="#1a1a2e"/>
+  <circle cx="66" cy="46" r="4.2" fill="#2d2d4a"/>
+  <circle cx="66" cy="46" r="1.7" fill="rgba(255,255,255,0.35)"/>
+  <circle cx="81" cy="46" r="8.5" fill="#1a1a2e"/>
+  <circle cx="81" cy="46" r="4.2" fill="#2d2d4a"/>
+  <circle cx="81" cy="46" r="1.7" fill="rgba(255,255,255,0.35)"/>
 
   <!-- Three gold speed lines (≡) -->
   <line x1="0" y1="56" x2="38" y2="56" stroke="#C8860A" stroke-width="2.2" stroke-linecap="round"/>
