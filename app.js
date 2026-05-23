@@ -7,8 +7,13 @@
 const cursorGlow = document.getElementById('cursorGlow');
 if (cursorGlow) {
   window.addEventListener('mousemove', e => {
-    cursorGlow.style.transform = `translate(${e.clientX - 300}px, ${e.clientY - 300}px)`;
+    cursorGlow.style.setProperty('--cx', e.clientX + 'px');
+    cursorGlow.style.setProperty('--cy', e.clientY + 'px');
   }, { passive: true });
+  document.addEventListener('mouseleave', () => {
+    cursorGlow.style.setProperty('--cx', '-9999px');
+    cursorGlow.style.setProperty('--cy', '-9999px');
+  });
 }
 
 /* ─── NAV: scroll glass ─── */
@@ -152,7 +157,7 @@ if (heroSection) {
   heroSection.appendChild(canvas);
 
   const ctx  = canvas.getContext('2d');
-  const C    = '201,90,40';
+  const C    = '27,61,140';
   const N    = 80, CD = 130, MD = 190;
   let ps = [], mx = -9999, my = -9999, raf = 0;
 
@@ -258,7 +263,7 @@ if (heroSection) {
       left:${sym.x}%;top:${sym.y}%;
       font-size:${sym.size}px;
       font-family:'JetBrains Mono',monospace;
-      color:#C95A28;
+      color:#C8860A;
       opacity:0;
       pointer-events:none;
       animation:symbolFloat ${sym.dur}s ${sym.delay}s linear infinite both;
