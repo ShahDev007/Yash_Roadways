@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Roadways – Fleet Owners & Transport Contractors</title>
+  <meta name="description" content="Gujarat's most trusted fleet owners and transport contractors. Specialists in cold chain, dairy logistics, and pan-India freight." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -11,10 +12,10 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════ NAV ═══════════════════════ -->
+  <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#home" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo-icon">🚛</span>
         <div>
           <span class="logo-main">YASH ROADWAYS</span>
@@ -22,70 +23,59 @@
         </div>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#clients">Clients</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
-  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-bg">
       <div class="hero-scatter"></div>
       <div class="hero-lines"></div>
     </div>
 
-    <!-- Left: content -->
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
         Gujarat's Most Trusted Fleet Partner
       </div>
-
-      <!-- Massive name, exactly like "Dev Shah." -->
       <h1 class="hero-title">
         YASH<br />ROADWAYS<span class="hero-title-dot">.</span>
       </h1>
-
-      <!-- ~/  subtitle line -->
       <div class="hero-subtitle">
         <span class="hero-subtitle-prefix">~/</span>
         Fleet Owners &amp; Transport Contractors
       </div>
-
       <p class="hero-desc">
         From <strong>Anand, Gujarat</strong> to every corner of the nation —
         powering the supply chains of India's biggest dairy and food brands
         with <strong>precision</strong>, <strong>reliability</strong>,
         and unmatched fleet strength.
       </p>
-
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get a Free Quote →</a>
-        <a href="#clients" class="btn-ghost">View Our Clients</a>
+        <a href="contact.html" class="btn-primary">Get a Free Quote →</a>
+        <a href="clients.html" class="btn-ghost">View Our Clients</a>
       </div>
-
-      <!-- Social-style links row, like Dev Shah's GitHub / LinkedIn / Email -->
       <div class="hero-social">
         <a href="tel:+919624805722">📱 96248 05722</a>
         <a href="https://wa.me/919624805722">💬 WhatsApp</a>
         <a href="mailto:yashroadways4167@gmail.com">✉️ Email</a>
       </div>
-
-      <!-- Stats below a divider line -->
       <div class="hero-stats">
         <div class="hstat">
           <div class="hstat-val"><span class="hstat-num" data-target="500">0</span><span>+</span></div>
@@ -109,69 +99,32 @@
       </div>
     </div>
 
-    <!-- Right: Fleet visual panel -->
+    <!-- Right: Real truck photo -->
     <div class="hero-visual">
-
-      <!-- Live route card -->
-      <div class="hv-card hv-route">
-        <div class="hv-card-header">
-          <span class="hv-live"><span class="hv-live-dot"></span> Live Dispatch</span>
-          <span class="hv-time">Just now</span>
-        </div>
-        <div class="hv-route-body">
-          <div class="hv-city">
-            <span class="hv-city-dot hv-dot-from"></span>
-            <div>
-              <strong>Anand</strong>
-              <small>Gujarat</small>
-            </div>
-          </div>
-          <div class="hv-route-line">
-            <div class="hv-truck-anim">🚛</div>
-            <div class="hv-dashes"></div>
-          </div>
-          <div class="hv-city hv-city-right">
-            <span class="hv-city-dot hv-dot-to"></span>
-            <div>
-              <strong>Delhi</strong>
-              <small>NCR</small>
-            </div>
-          </div>
-        </div>
-        <div class="hv-route-meta">
-          <span>🥛 Amul Fed Dairy</span>
-          <span>24 MT · ❄️ 4°C</span>
-          <span class="hv-ontime">✓ On Time</span>
+      <div class="hero-photo-card">
+        <img
+          src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80"
+          alt="Yash Roadways fleet truck on highway"
+          class="hero-truck-photo"
+        />
+        <div class="hero-photo-badge">
+          <span class="hv-live-dot"></span>
+          Fleet in Motion
         </div>
       </div>
 
-      <!-- Client trust strip -->
-      <div class="hv-card hv-clients-strip">
-        <p class="hv-strip-label">Trusted by India's biggest names</p>
-        <div class="hv-logos">
-          <div class="hv-logo-pill">🥛 Amul</div>
-          <div class="hv-logo-pill">🏭 Mother Dairy</div>
-          <div class="hv-logo-pill">🥛 Sumul</div>
-          <div class="hv-logo-pill">🍔 McCain</div>
-          <div class="hv-logo-pill">🥛 Banas Dairy</div>
-          <div class="hv-logo-pill">🌾 Simplot</div>
-        </div>
-      </div>
-
-      <!-- Two small stat cards -->
       <div class="hv-mini-cards">
+        <div class="hv-card hv-mini">
+          <span class="hv-mini-icon">❄️</span>
+          <strong>Cold Chain</strong>
+          <small>Reefer specialists</small>
+        </div>
         <div class="hv-card hv-mini">
           <span class="hv-mini-icon">🛣️</span>
           <strong>Pan-India</strong>
-          <small>Routes covered</small>
-        </div>
-        <div class="hv-card hv-mini">
-          <span class="hv-mini-icon">⏱️</span>
-          <strong>24 / 7</strong>
-          <small>Fleet operations</small>
+          <small>All major routes</small>
         </div>
       </div>
-
     </div>
 
     <div class="scroll-indicator">
@@ -180,403 +133,106 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════ MARQUEE BAND ═══════════════════════ -->
+  <!-- MARQUEE -->
   <div class="marquee-band">
     <div class="marquee-track">
-      <span>Amul</span><span>·</span>
-      <span>Mother Dairy Delhi</span><span>·</span>
-      <span>Sumul Dairy Surat</span><span>·</span>
-      <span>Banas Dairy Palanpur</span><span>·</span>
-      <span>Gujarat Milk Marketing Federation</span><span>·</span>
-      <span>Sabar Dairy Himatnagar</span><span>·</span>
-      <span>Dudh Sagar Dairy Mehsana</span><span>·</span>
-      <span>Sarhad Dairy Kutch</span><span>·</span>
-      <span>Vasudhara Dairy Valsad</span><span>·</span>
-      <span>Uttam Dairy Ahmedabad</span><span>·</span>
-      <span>Amul</span><span>·</span>
-      <span>Mother Dairy Delhi</span><span>·</span>
-      <span>Sumul Dairy Surat</span><span>·</span>
-      <span>Banas Dairy Palanpur</span><span>·</span>
-      <span>Gujarat Milk Marketing Federation</span><span>·</span>
-      <span>Sabar Dairy Himatnagar</span><span>·</span>
-      <span>Dudh Sagar Dairy Mehsana</span><span>·</span>
-      <span>Sarhad Dairy Kutch</span><span>·</span>
-      <span>Vasudhara Dairy Valsad</span><span>·</span>
-      <span>Uttam Dairy Ahmedabad</span><span>·</span>
+      <span>Amul</span><span>·</span><span>Mother Dairy Delhi</span><span>·</span>
+      <span>Sumul Dairy Surat</span><span>·</span><span>Banas Dairy Palanpur</span><span>·</span>
+      <span>Gujarat Milk Marketing Federation</span><span>·</span><span>Sabar Dairy Himatnagar</span><span>·</span>
+      <span>Dudh Sagar Dairy Mehsana</span><span>·</span><span>Sarhad Dairy Kutch</span><span>·</span>
+      <span>Vasudhara Dairy Valsad</span><span>·</span><span>Uttam Dairy Ahmedabad</span><span>·</span>
+      <span>McCain Foods</span><span>·</span><span>Simplot</span><span>·</span>
+      <span>Amul</span><span>·</span><span>Mother Dairy Delhi</span><span>·</span>
+      <span>Sumul Dairy Surat</span><span>·</span><span>Banas Dairy Palanpur</span><span>·</span>
+      <span>Gujarat Milk Marketing Federation</span><span>·</span><span>Sabar Dairy Himatnagar</span><span>·</span>
+      <span>Dudh Sagar Dairy Mehsana</span><span>·</span><span>Sarhad Dairy Kutch</span><span>·</span>
+      <span>Vasudhara Dairy Valsad</span><span>·</span><span>Uttam Dairy Ahmedabad</span><span>·</span>
+      <span>McCain Foods</span><span>·</span><span>Simplot</span><span>·</span>
     </div>
   </div>
 
-  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
-  <section id="about" class="section about-section">
+  <!-- ABOUT TEASER -->
+  <section class="section home-about">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal">
-          <div class="about-card-main">
-            <div class="about-icon-big">🚚</div>
-            <h3>Yash Roadways</h3>
-            <p>Est. Anand, Gujarat</p>
-            <div class="about-branch-badge">Branch: Anand Transport</div>
-          </div>
-          <div class="about-card-float top-right">
-            <span>📍</span>
-            <span>Pan-India Network</span>
-          </div>
-          <div class="about-card-float bottom-left">
-            <span>⭐</span>
-            <span>Premium Fleet</span>
-          </div>
-          <div class="glow-ring"></div>
+      <div class="ha-grid">
+        <div class="ha-photo reveal">
+          <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=700&q=80" alt="Yash Roadways truck fleet" />
+          <div class="ha-photo-tag">Est. Anand, Gujarat</div>
         </div>
-        <div class="about-text reveal">
-          <div class="section-tag">About Us</div>
-          <h2 class="section-title">Gujarat's Backbone of <span class="gradient-text">Refrigerated Logistics</span></h2>
-          <p class="about-desc">
-            Headquartered in Anand — the dairy capital of India — Yash Roadways has been the invisible force behind the country's cold chain. We specialize in temperature-sensitive freight, full truckload hauls, and dedicated fleet solutions for dairy cooperatives, FMCG giants, and food processing companies.
-          </p>
-          <p class="about-desc">
-            Our branch, <strong>Anand Transport</strong>, extends our reach further, ensuring seamless last-mile and long-haul connectivity across Gujarat and beyond.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <span class="hi-icon">❄️</span>
-              <div>
-                <strong>Cold Chain Specialists</strong>
-                <span>Temperature-controlled fleet for dairy & perishables</span>
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="hi-icon">🛣️</span>
-              <div>
-                <strong>Pan-India Routes</strong>
-                <span>Gujarat to Delhi, Mumbai, and all major metros</span>
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="hi-icon">📞</span>
-              <div>
-                <strong>24/7 Operations</strong>
-                <span>Round-the-clock dispatch and tracking support</span>
-              </div>
-            </div>
-          </div>
+        <div class="ha-text reveal">
+          <div class="section-tag">About Yash Roadways</div>
+          <h2 class="section-title">Gujarat's Backbone of <span class="gradient-text">Freight Logistics</span></h2>
+          <p>Headquartered in Anand — the dairy capital of India — Yash Roadways has been the invisible force behind the country's cold chain for over 15 years. We specialize in temperature-sensitive freight, full truckload hauls, and dedicated fleet solutions for dairy cooperatives, FMCG giants, and food processing companies.</p>
+          <p style="margin-top:14px;">Our branch, <strong>Anand Transport</strong>, extends our reach further — seamless last-mile and long-haul connectivity across Gujarat and beyond.</p>
+          <a href="about.html" class="btn-primary" style="margin-top:28px;display:inline-flex;">Our Story →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
-  <section id="services" class="section services-section">
+  <!-- SERVICES TEASER -->
+  <section class="section home-services">
     <div class="container">
       <div class="section-header reveal">
         <div class="section-tag">What We Do</div>
-        <h2 class="section-title">End-to-End <span class="gradient-text">Transport Solutions</span></h2>
-        <p class="section-subtitle">Every shipment treated as mission-critical. Every truck dispatched with precision.</p>
+        <h2 class="section-title">Built for <span class="gradient-text">Every Freight Need</span></h2>
+        <p class="section-subtitle">Cold chain, bulk haul, or last-mile — we have the fleet and the expertise.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">❄️</div>
-          <h3>Refrigerated Transport</h3>
-          <p>State-of-the-art reefer trucks maintaining precise temperature control from source to destination. Trusted by India's biggest dairy brands.</p>
-          <div class="service-tag">Cold Chain</div>
+      <div class="hs-grid">
+        <div class="hs-card reveal">
+          <div class="hs-photo">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Refrigerated transport" />
+          </div>
+          <div class="hs-body">
+            <span class="hs-icon">❄️</span>
+            <h3>Refrigerated Transport</h3>
+            <p>State-of-the-art reefer trucks maintaining precise temperature control from source to destination.</p>
+          </div>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🚛</div>
-          <h3>Full Truckload (FTL)</h3>
-          <p>Dedicated full-truck dispatches for bulk freight with zero compromise on speed, safety, or schedule adherence.</p>
-          <div class="service-tag">Bulk Freight</div>
+        <div class="hs-card reveal">
+          <div class="hs-photo">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Full truckload freight" />
+          </div>
+          <div class="hs-body">
+            <span class="hs-icon">🚛</span>
+            <h3>Full Truckload (FTL)</h3>
+            <p>Dedicated full-truck dispatches for bulk freight with zero compromise on speed or schedule.</p>
+          </div>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon">📦</div>
-          <h3>Part Load (LTL)</h3>
-          <p>Cost-effective shared-load solutions for smaller consignments without sacrificing delivery timelines or cargo safety.</p>
-          <div class="service-tag">Flexible</div>
+        <div class="hs-card reveal">
+          <div class="hs-photo">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=600&q=80" alt="Pan-India routes" />
+          </div>
+          <div class="hs-body">
+            <span class="hs-icon">🗺️</span>
+            <h3>Pan-India Distribution</h3>
+            <p>Direct plant-to-depot hauls ensuring your product moves at maximum efficiency across India.</p>
+          </div>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🏭</div>
-          <h3>Dedicated Fleet Contracts</h3>
-          <p>Long-term fleet partnerships with scheduled pickups, dedicated drivers, and customized SOPs for FMCG & dairy companies.</p>
-          <div class="service-tag">Enterprise</div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🗺️</div>
-          <h3>Primary Distribution</h3>
-          <p>Direct plant-to-depot hauls ensuring your product moves at maximum efficiency from manufacturing to regional hubs.</p>
-          <div class="service-tag">Supply Chain</div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">📍</div>
-          <h3>Local & Intra-City Delivery</h3>
-          <p>Through our Anand Transport branch — fast, reliable intra-city and local distribution for time-sensitive consignments.</p>
-          <div class="service-tag">Last Mile</div>
-        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="services.html" class="btn-ghost">All Services →</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════ CLIENTS ═══════════════════════ -->
-  <section id="clients" class="section clients-section">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-tag">Our Clientele</div>
-        <h2 class="section-title">Trusted by India's <span class="gradient-text">Largest Brands</span></h2>
-        <p class="section-subtitle">When the biggest names in dairy and food need reliable transport, they call Yash Roadways.</p>
-      </div>
-
-      <div class="clients-category reveal">
-        <h3 class="cat-title"><span class="cat-icon">🥛</span> Dairy Cooperatives & Federations</h3>
-        <div class="clients-grid">
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Amul</span>
-            <small>GCMMF, Anand</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🏭</div>
-            <span>Amul Fed Dairy</span>
-            <small>Gandhinagar</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Mother Dairy</span>
-            <small>Delhi</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🏢</div>
-            <span>Gujarat Milk Marketing Federation</span>
-            <small>Gujarat</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Sugam Dairy</span>
-            <small>Baroda</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Baroda Dairy</span>
-            <small>Baroda</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Banas Dairy</span>
-            <small>Palanpur</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Sumul Dairy</span>
-            <small>Surat</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Vasudhara Dairy</span>
-            <small>Valsad</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Dudhra Dairy</span>
-            <small>Bharuch</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Uttam Dairy</span>
-            <small>Ahmedabad</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Sarhad Dairy</span>
-            <small>Kutch</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Dudh Sagar Dairy</span>
-            <small>Mehsana</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Sabar Dairy</span>
-            <small>Himatnagar</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Savaj Dairy</span>
-            <small>Jungad</small>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🥛</div>
-            <span>Sudama Dairy</span>
-            <small>Porbandar</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="clients-category reveal">
-        <h3 class="cat-title"><span class="cat-icon">🍔</span> Food & FMCG Companies</h3>
-        <div class="clients-grid clients-grid-small">
-          <div class="client-card">
-            <div class="client-logo">🍔</div>
-            <span>McCain Foods</span>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">❄️</div>
-            <span>Chill Fill</span>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🏢</div>
-            <span>Buzz Corporation</span>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🍽️</div>
-            <span>Funway Food</span>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🙏</div>
-            <span>Iscon Balaji</span>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🌾</div>
-            <span>Simplot</span>
-          </div>
-          <div class="client-card">
-            <div class="client-logo">🏭</div>
-            <span>McPatel</span>
-          </div>
-        </div>
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-photo">
+      <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1400&q=80" alt="Trucks on Indian highway" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="cta-content container">
+      <h2>Ready to move your freight <span class="gradient-text">smarter?</span></h2>
+      <p>Join 25+ industry leaders who trust Yash Roadways for their most critical shipments.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-primary">Get a Quote Today</a>
+        <a href="clients.html" class="btn-ghost-light">See Our Clients</a>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════ WHY US ═══════════════════════ -->
-  <section id="why-us" class="section whyus-section">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-tag">Why Choose Us</div>
-        <h2 class="section-title">The Yash Roadways <span class="gradient-text">Advantage</span></h2>
-      </div>
-      <div class="whyus-grid">
-        <div class="why-card reveal">
-          <div class="why-num">01</div>
-          <div class="why-icon">🔒</div>
-          <h3>Zero Compromise on Safety</h3>
-          <p>Every truck complies with road safety norms. Drivers are trained, vetted, and experienced in long-haul dairy logistics.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">02</div>
-          <div class="why-icon">⚡</div>
-          <h3>Lightning-Fast Dispatch</h3>
-          <p>We move when you need us. Our dispatch team is on standby 24/7 to ensure your cargo never waits.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">03</div>
-          <div class="why-icon">❄️</div>
-          <h3>Cold Chain Expertise</h3>
-          <p>Decades of experience moving dairy products. We understand the science of temperature-controlled transport better than anyone in Gujarat.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">04</div>
-          <div class="why-icon">🤝</div>
-          <h3>Long-Term Partnerships</h3>
-          <p>Our clients stay because we deliver. Amul, Mother Dairy, and more have trusted us for years — because we earn it every trip.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">05</div>
-          <div class="why-icon">📊</div>
-          <h3>Transparent Operations</h3>
-          <p>Clear communication, upfront pricing, and honest dealings. No surprises — just reliable service you can bank on.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-num">06</div>
-          <div class="why-icon">🗺️</div>
-          <h3>Pan-India Reach</h3>
-          <p>From Kutch to Delhi, Gujarat to Mumbai — our network spans the entire country's critical freight corridors.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-tag">Get In Touch</div>
-        <h2 class="section-title">Ready to Move <span class="gradient-text">Smarter?</span></h2>
-        <p class="section-subtitle">Tell us about your freight needs and get a customized quote within the hour.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <h3>Reach Us Directly</h3>
-          <div class="contact-item">
-            <span class="c-icon">📍</span>
-            <div>
-              <strong>Head Office</strong>
-              <p>G-6, Laksh Emperior, Opp. Red Cross Society,<br />Anand – 388 001, Gujarat</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="c-icon">📱</span>
-            <div>
-              <strong>Call / WhatsApp</strong>
-              <p><a href="tel:+919624805722">+91 96248 05722</a></p>
-              <p><a href="tel:+918780634044">+91 87806 34044</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="c-icon">✉️</span>
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:yashroadways4167@gmail.com">yashroadways4167@gmail.com</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="c-icon">🏢</span>
-            <div>
-              <strong>Branch Office</strong>
-              <p>Anand Transport — Anand, Gujarat</p>
-            </div>
-          </div>
-          <div class="social-row">
-            <a href="tel:+919624805722" class="social-btn">📞 Call Now</a>
-            <a href="https://wa.me/919624805722" class="social-btn whatsapp">💬 WhatsApp</a>
-          </div>
-        </div>
-        <form class="contact-form reveal" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Your Name</label>
-              <input type="text" placeholder="Full Name" required />
-            </div>
-            <div class="form-group">
-              <label>Company</label>
-              <input type="text" placeholder="Company Name" />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="+91 XXXXX XXXXX" required />
-            </div>
-            <div class="form-group">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.com" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Route / Freight Details</label>
-            <input type="text" placeholder="e.g. Anand → Delhi, 20MT dairy goods" />
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea rows="4" placeholder="Tell us about your transport requirements..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary btn-full">
-            <span>Send Enquiry</span>
-            <span class="btn-arrow">→</span>
-          </button>
-          <p class="form-note">We typically respond within 1 hour during business hours.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -595,30 +251,30 @@
           </div>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="#about">About Us</a>
-          <a href="#services">Our Services</a>
-          <a href="#clients">Our Clients</a>
-          <a href="#why-us">Why Choose Us</a>
-          <a href="#contact">Contact</a>
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="clients.html">Our Clients</a>
+          <a href="contact.html">Contact</a>
         </div>
         <div class="footer-links">
           <h4>Services</h4>
-          <a href="#services">Refrigerated Transport</a>
-          <a href="#services">Full Truckload (FTL)</a>
-          <a href="#services">Part Load (LTL)</a>
-          <a href="#services">Dedicated Fleet Contracts</a>
-          <a href="#services">Primary Distribution</a>
+          <a href="services.html">Refrigerated Transport</a>
+          <a href="services.html">Full Truckload (FTL)</a>
+          <a href="services.html">Part Load (LTL)</a>
+          <a href="services.html">Dedicated Fleet</a>
+          <a href="services.html">Primary Distribution</a>
         </div>
         <div class="footer-links">
-          <h4>Our Branches</h4>
-          <p style="color:var(--text-3);font-size:0.88rem;line-height:1.7;">Yash Roadways<br />G-6, Laksh Emperior,<br />Opp. Red Cross Society,<br />Anand – 388 001</p>
+          <h4>Contact</h4>
+          <p style="color:var(--text-3);font-size:0.88rem;line-height:1.7;">G-6, Laksh Emperior,<br />Opp. Red Cross Society,<br />Anand – 388 001, Gujarat</p>
           <br />
           <p style="color:var(--text-3);font-size:0.88rem;"><strong style="color:var(--accent);">Anand Transport</strong><br />Anand, Gujarat</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Yash Roadways. All rights reserved. | Built with pride in Anand, Gujarat 🇮🇳</p>
+        <p>© 2025 Yash Roadways. All rights reserved. | Anand, Gujarat 🇮🇳</p>
       </div>
     </div>
   </footer>
