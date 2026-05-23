@@ -146,14 +146,15 @@ a { text-decoration: none; color: inherit; }
   z-index: 1000;
   padding: 0 28px;
   transition: var(--transition);
-  border-bottom: 1px solid transparent;
+  background: linear-gradient(135deg, #1E3A7B 0%, #162D62 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 #navbar.scrolled {
-  background: rgba(240, 234, 226, 0.90);
+  background: linear-gradient(135deg, rgba(30,58,123,0.97) 0%, rgba(22,45,98,0.97) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom-color: var(--border);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.20);
 }
 
 .nav-inner {
@@ -174,7 +175,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.04em;
-  color: var(--text);
+  color: #ffffff;
   line-height: 1.1;
 }
 
@@ -189,7 +190,7 @@ a { text-decoration: none; color: inherit; }
   display: block;
   font-family: var(--font-mono);
   font-size: 0.6rem;
-  color: var(--text-4);
+  color: rgba(255,255,255,0.52);
   font-weight: 400;
   letter-spacing: 0.04em;
   margin-top: 2px;
@@ -202,24 +203,25 @@ a { text-decoration: none; color: inherit; }
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-3);
+  color: rgba(255,255,255,0.72);
   transition: var(--transition);
 }
 
-.nav-links a:hover { color: var(--text); background: rgba(28,23,20,0.06); }
+.nav-links a:hover { color: #ffffff; background: rgba(255,255,255,0.10); }
 
 .nav-cta {
-  background: var(--accent) !important;
-  color: white !important;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
+  color: #ffffff !important;
   font-weight: 700 !important;
   padding: 8px 20px !important;
   border-radius: 9px !important;
+  box-shadow: 0 3px 12px var(--gold-glow) !important;
 }
 
 .nav-cta:hover {
-  background: var(--accent-light) !important;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-pale)) !important;
   transform: translateY(-1px);
-  box-shadow: 0 6px 24px var(--accent-glow) !important;
+  box-shadow: 0 6px 20px var(--gold-glow) !important;
 }
 
 .hamburger {
@@ -232,7 +234,7 @@ a { text-decoration: none; color: inherit; }
   padding: 4px;
 }
 
-.hamburger span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+.hamburger span { width: 22px; height: 2px; background: rgba(255,255,255,0.85); border-radius: 2px; transition: var(--transition); }
 
 .mobile-menu {
   display: none;
@@ -1431,8 +1433,8 @@ a { text-decoration: none; color: inherit; }
 
 /* ─── Nav active link ─── */
 .nav-links a.active {
-  color: var(--accent);
-  background: var(--accent-dim);
+  color: #ffffff;
+  background: rgba(255,255,255,0.15);
 }
 
 .mobile-menu a.active {
