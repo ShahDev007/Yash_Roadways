@@ -170,6 +170,20 @@ a { text-decoration: none; color: inherit; }
 
 .logo-icon { font-size: 1.6rem; }
 
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.footer-logo-img {
+  height: 52px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
 .logo-main {
   display: block;
   font-size: 0.85rem;
@@ -591,13 +605,13 @@ a { text-decoration: none; color: inherit; }
 .hero-visual {
   position: absolute;
   right: calc((100vw - 1200px) / 2);
-  top: 50%;
+  top: calc(50% + 40px);
   transform: translateY(-50%);
   z-index: 3;
   width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   animation: visualFloat 6s ease-in-out infinite;
 }
 
@@ -606,7 +620,7 @@ a { text-decoration: none; color: inherit; }
 
 @keyframes visualFloat {
   0%,100% { transform: translateY(-50%); }
-  50%      { transform: translateY(calc(-50% - 10px)); }
+  50%      { transform: translateY(calc(-50% - 8px)); }
 }
 
 /* Base card */
@@ -614,7 +628,7 @@ a { text-decoration: none; color: inherit; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px 22px;
+  padding: 14px 18px;
   box-shadow: 0 8px 32px rgba(28,23,20,0.10);
   transition: var(--transition);
 }
@@ -629,7 +643,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .hv-live {
@@ -661,7 +675,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .hv-city {
@@ -723,7 +737,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 14px;
+  padding-top: 10px;
   border-top: 1px solid var(--border);
   font-size: 0.78rem;
   color: var(--text-3);
@@ -739,15 +753,15 @@ a { text-decoration: none; color: inherit; }
 .hv-ops-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 8px;
+  margin-bottom: 0;
 }
 
 .hv-ops-stat {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 12px 14px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   gap: 3px;
